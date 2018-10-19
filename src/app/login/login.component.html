@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-5 login-area">
+      <div class="login-box"><p>
+  <app-message></app-message>
+</p>
+<p>
+  <label class="label-login">Email :<em class="req">*</em></label>
+   <input class="form-control input-login" [(ngModel)]="email" (change)="activateBtn()" >
+</p>
+
+<p>
+  <label class="label-login">Password :<em class="req">*</em></label>
+  <input type="password" class="form-control input-login" [(ngModel)]="password">
+</p>
+
+<p>
+  <button class="btn login-btn-box" (click)="checkLogin()" [disabled]="btnEnabled">Login</button>
+</p>
+</div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-5 register-area">
+    <div class="register-box">
+    <p>
+        <app-message></app-message>
+      </p>
+      <p>
+        <label class="label-register"> Name : <em class="req">*</em></label>
+        <input class="form-control input-register" [(ngModel)]="name">
+      </p>
+      <p>
+          <label class="label-register"> Email : <em class="req">*</em></label><input type="email" class="form-control input-register" [(ngModel)]="email">
+      </p>
+      <p>
+        <label class="label-register"> Picture : <em class="req">*</em></label><input type="text" class="form-control input-register" [(ngModel)]="picture">
+    
+    </p>
+      <p>
+          <label class="label-register"> password : <em class="req">*</em></label><input type="password" class="form-control input-register" [(ngModel)]="password">
+      
+      </p>
+      <p>
+          <label class="label-register"> Retype Password : <em class="req">*</em></label> <input type="password" class="form-control input-register" [(ngModel)]="password1">
+      </p>
+      
+      <p>
+        <button class="btn register-btn-box" [disabled]="btnDisabled" (click)="register()">Register</button>
+      </p>      
+</div>
+</div>
+</div>
